@@ -34,7 +34,7 @@ Before starting, ensure the following are in place:
    - **Schedule**: As per migration requirement
 
 📸 *Screenshot:*  
-![Data Transfer Service](../screenshots/bq-transfer-service.png)
+![Data Transfer Service](../screenshots/image1.png)
 
 ---
 
@@ -52,7 +52,8 @@ Before starting, ensure the following are in place:
   - Use `.*` to migrate all tables
 
 📸 *Screenshot:*  
-![Transfer Configuration](../screenshots/transfer-status.png)
+![GCP Bucket creation](../screenshots/image2.png)
+![Transfer Configuration Completion](../screenshots/image3.png)
 
 ---
 
@@ -75,7 +76,6 @@ Open **SSH-in-browser** to the GCE VM where migration will be executed.
 ```bash
 wget https://storage.googleapis.com/data_transfer_agent/latest/mirroring-agent.jar
 ```
-
 
 Ensure terajdbc4.jar is available in the same or referenced directory.
 
@@ -108,6 +108,7 @@ Default: 1025
 . Confirm TPT unload → Yes
 
 📸 Screenshot:
+Follow the last screenshot for reference.
 
 
 ### 🔐 Step 7: Configure Credentials
@@ -142,7 +143,14 @@ com.google.cloud.bigquery.dms.Agent \
 --configuration-file=/opt/downloads/migration_agent_config/migration_config
 ```
 
-📸 Screenshot:
+📸 *Screenshot:*  
+![Data transfer completion](../screenshots/image4.png)
+
+### ▶️ Step 10: Validate the data transfer in the new dataset created in GCP
+
+📸 *Screenshot:*  
+![Data transfer completion](../screenshots/image5.png)
+
 
 ### ⚠️ Production Considerations
 
