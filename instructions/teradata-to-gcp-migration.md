@@ -62,7 +62,7 @@ Before starting, ensure the following are in place:
 - Enable:
   - 📧 Email notifications
   - 📣 Pub/Sub notifications (for production monitoring)
-
+Save the data transfer created in GCP.
 ---
 
 ### 🖥 Step 4: Connect to GCE VM
