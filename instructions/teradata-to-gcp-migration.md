@@ -108,7 +108,7 @@ Default: 1025
 . Confirm TPT unload → Yes
 
 📸 Screenshot:
-Follow the last screenshot for reference.
+Follow the last screenshot at Step 10 for reference.
 
 
 ### 🔐 Step 7: Configure Credentials
